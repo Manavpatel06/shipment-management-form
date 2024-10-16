@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shipment Management Form</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+        <script src="ShipmentForm.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header text-center">
+                <h2>Shipment Management Form</h2></div>
+            <form id="shipForm">
+                <div class="form-group">
+                    <label for="shipId">Shipment No:</label>
+                    <input type="text" class="form-control" id="shipId" onchange="getShipData()">
+                </div>
+                <div class="form-group">
+                    <label for="desc">Description:</label>
+                    <input type="text" class="form-control" id="desc">
+                </div>
+                <div class="form-group">
+                    <label for="source">Source:</label>
+                    <input type="text" class="form-control" id="source">
+                </div>
+                <div class="form-group">
+                    <label for="dest">Destination:</label>
+                    <input type="text" class="form-control" id="dest">
+                </div>
+                <div class="form-group">
+                    <label for="sdate">Shipping-Date:</label>
+                    <input type="date" class="form-control" id="sdate">
+                </div>
+                <div class="form-group">
+                    <label for="ddate">Expected-Delivery-date:</label>
+                    <input type="date" class="form-control" id="ddate">
+                </div>
+
+                <div class="form-group text-center">
+                    <button type="button" class="btn btn-primary" id="btnSave" onclick="saveShip()" disabled>Save</button>
+                    <button type="button" class="btn btn-warning" id="btnChange" onclick="changeShip()" disabled>Change</button>
+                    <button type="button" class="btn btn-danger" id="btnReset" onclick="resetForm()" disabled>Reset</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
