@@ -38,13 +38,13 @@ This repository contains a web-based **Shipment Management Form** developed usin
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/shipment-management-form.git
+   git clone https://github.com/Manavpatel06/shipment-management-form.git
    ```
 2. Open the project folder:
    ```bash
    cd shipment-management-form
    ```
-3. Open the `index.html` file in any browser to run the form.
+3. Open the `ShipmentForm.html` file in any browser to run the form.
 
 ### Optional: Run on a local server
 
@@ -76,7 +76,7 @@ You can use any local server like **Live Server** or **http-server** to run the 
 ```bash
 shipment-management-form/
 │
-├── index.html          # Main HTML file for the form
+├── ShipmentForm.html          # Main HTML file for the form
 ├── ShipmentForm.js     # JavaScript logic for interacting with the form and jpdb API
 ├── README.md           # Project documentation (this file)
 ```
